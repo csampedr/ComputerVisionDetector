@@ -38,7 +38,7 @@ model.fit(x_train, y_train,
 
 print("Guardando modelo...")
 model.save('model_mnist_cnn.h5')
-print("✅ Modelo guardado como model_mnist_cnn.h5")
+print("Modelo guardado como model_mnist_cnn.h5")
 
 loss, acc = model.evaluate(x_test, y_test, verbose=0)
 print(f"Precisión final: {acc*100:.2f}%")

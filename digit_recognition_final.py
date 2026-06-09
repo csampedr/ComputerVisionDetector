@@ -10,10 +10,10 @@ model = tf.keras.models.load_model('model_mnist_cnn.h5', compile=False)
 cam = cv2.VideoCapture(0, cv2.CAP_V4L2)
 
 if not cam.isOpened():
-    print("❌ No se detectó cámara.")
+    print("No se detectó cámara.")
     exit()
 
-print("✅ Listo. Muestra un dígito a la cámara. Presiona ESC para salir.")
+print("Listo. Muestra un dígito a la cámara. Presiona ESC para salir.")
 
 # ── Colores para el Sense HAT ───────────────────────
 GREEN  = [0, 255, 0]
